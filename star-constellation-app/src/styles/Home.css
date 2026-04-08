@@ -1,0 +1,564 @@
+﻿.home-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 100px;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, rgba(88, 28, 135, 0.2) 0%, rgba(30, 27, 75, 0.2) 100%);
+  border-radius: 20px;
+  border: 1px solid rgba(168, 85, 247, 0.1);
+  min-height: 500px;
+}
+
+.hero-content {
+  flex: 1;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 30px 0;
+  line-height: 1.4;
+}
+
+.hero-subtitle span {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5);
+}
+
+.hero-image {
+  flex: 1;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planet {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #4da6ff, #0066cc);
+  box-shadow: 0 0 60px rgba(13, 110, 253, 0.4), inset -30px -30px 60px rgba(0, 0, 0, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.features-section {
+  margin-bottom: 80px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: rgba(88, 28, 135, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 15px;
+  padding: 30px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  background: rgba(88, 28, 135, 0.25);
+  border-color: rgba(168, 85, 247, 0.4);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 50%;
+  background: rgba(168, 85, 247, 0.1);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  background: rgba(168, 85, 247, 0.25);
+  transform: scale(1.1);
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 15px 0 10px 0;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cosmic-alerts {
+  margin-bottom: 80px;
+}
+
+.alerts-content {
+  margin-bottom: 40px;
+}
+
+.alerts-content h2 {
+  font-size: 36px;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+}
+
+.alerts-content p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.alerts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.alert-card {
+  background: rgba(30, 27, 75, 0.5);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.alert-card:hover {
+  background: rgba(30, 27, 75, 0.7);
+  border-color: rgba(168, 85, 247, 0.3);
+  transform: translateY(-8px);
+}
+
+.alert-card h4 {
+  font-size: 16px;
+  color: #a855f7;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.alert-card .date {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 10px 0;
+}
+
+.alert-card .desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.blueprint-section {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(236, 72, 153, 0.1) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 20px;
+  padding: 60px 40px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.blueprint-content h2 {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+}
+
+.blueprint-content h2 span,
+.transform-content h2 span {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blueprint-content p,
+.transform-content p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 30px 0;
+}
+
+.show-details-btn {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+}
+
+.show-details-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5);
+}
+
+.transform-section {
+  background: linear-gradient(135deg, rgba(88, 28, 135, 0.2) 0%, rgba(30, 27, 75, 0.2) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.1);
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.transform-content h2 {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app-store,
+.play-store,
+.modal-ok-btn,
+.explore-btn,
+.back-btn,
+.close-modal {
+  background: rgba(168, 85, 247, 0.2);
+  color: white;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.app-store:hover,
+.play-store:hover,
+.modal-ok-btn:hover,
+.explore-btn:hover,
+.back-btn:hover {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  border-color: transparent;
+  transform: translateY(-3px);
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+}
+
+.planet-ring {
+  position: absolute;
+  width: 420px;
+  height: 100px;
+  border: 2px solid rgba(168, 85, 247, 0.4);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(75deg);
+  animation: rotate 8s linear infinite;
+}
+
+.star-cluster {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+  0% { transform: translate(-50%, -50%) rotateX(75deg) rotateZ(0deg); }
+  100% { transform: translate(-50%, -50%) rotateX(75deg) rotateZ(360deg); }
+}
+
+.zodiac-section,
+.constellation-section,
+.faq-section {
+  margin-bottom: 80px;
+}
+
+.zodiac-grid,
+.faq-grid,
+.constellation-cards {
+  display: grid;
+  gap: 25px;
+}
+
+.zodiac-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.faq-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.constellation-cards {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.zodiac-card,
+.faq-card,
+.constellation-card {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 15px;
+  padding: 30px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.zodiac-card:hover,
+.faq-card:hover,
+.constellation-card:hover {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(236, 72, 153, 0.1) 100%);
+  border-color: rgba(168, 85, 247, 0.4);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
+}
+
+.zodiac-symbol,
+.constellation-image {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.zodiac-card h3,
+.constellation-card h3,
+.faq-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #a855f7;
+  margin: 0 0 10px 0;
+}
+
+.zodiac-desc,
+.constellation-card .mythology,
+.faq-card p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
+
+.constellation-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.const-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-item {
+  background: rgba(168, 85, 247, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.info-item .label {
+  display: block;
+  color: #a855f7;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.info-item .value {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.alert-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.alert-symbol {
+  font-size: 28px;
+}
+
+.blueprint-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.bp-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bp-icon {
+  font-size: 36px;
+}
+
+.bp-feature span:last-child {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.info-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 7, 18, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 200;
+}
+
+.info-modal {
+  width: min(560px, 100%);
+  background: #0f172a;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 18px;
+  padding: 28px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.close-modal {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px 12px;
+}
+
+.modal-body p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modal-source-link {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #d8b4fe;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-image {
+    height: 250px;
+  }
+
+  .planet {
+    width: 250px;
+    height: 250px;
+  }
+
+  .alerts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blueprint-content h2,
+  .transform-content h2 {
+    font-size: 28px;
+  }
+}
