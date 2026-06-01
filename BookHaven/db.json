@@ -1,0 +1,136 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Onyx Storm",
+      "author": "Rebecca Yarros",
+      "genre": "Fantasy",
+      "description": "The highly anticipated third book in the Empyrean series.",
+      "image": "/images/books/book-1.jpg",
+      "pages": 640,
+      "mood": [
+        "magical",
+        "chaotic"
+      ],
+      "rating": 4.8,
+      "price": 24.99,
+      "stock": 10
+    },
+    {
+      "id": "2",
+      "title": "Fourth Wing",
+      "author": "Rebecca Yarros",
+      "genre": "Fantasy",
+      "description": "Enter the world of Basgiath War College.",
+      "image": "/images/books/book-2.jpg",
+      "pages": 528,
+      "mood": [
+        "inspiring",
+        "chaotic"
+      ],
+      "rating": 4.9,
+      "price": 19.99,
+      "stock": 15
+    },
+    {
+      "id": "3",
+      "title": "A Court of Thorns and Roses",
+      "author": "Sarah J. Maas",
+      "genre": "Fantasy",
+      "description": "Feyre's survival rests upon her ability to hunt and kill.",
+      "image": "/images/books/book-3.jpg",
+      "pages": 419,
+      "mood": [
+        "magical",
+        "heartbreaking"
+      ],
+      "rating": 4.7,
+      "price": 18.5,
+      "stock": 5
+    },
+    {
+      "id": "4",
+      "title": "The Shadow of the Wind",
+      "author": "Carlos Ruiz Zafón",
+      "genre": "Mystery",
+      "description": "A young man's search for a forgotten author turns into a tale of secrets and intrigue.",
+      "image": "/images/books/book-4.jpg",
+      "pages": 487,
+      "mood": [
+        "mysterious",
+        "romantic"
+      ],
+      "rating": 4.6,
+      "price": 17.99,
+      "stock": 12
+    },
+    {
+      "id": "5",
+      "title": "The Night Circus",
+      "author": "Erin Morgenstern",
+      "genre": "Fantasy",
+      "description": "A magical competition inside a traveling circus draws two young illusionists together.",
+      "image": "/images/books/book-5.jpg",
+      "pages": 387,
+      "mood": [
+        "magical",
+        "romantic"
+      ],
+      "rating": 4.3,
+      "price": 16.99,
+      "stock": 18
+    },
+    {
+      "id": "6",
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "genre": "Historical",
+      "description": "A young girl steals books during WWII and discovers the power of words.",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1395222717i/19063.jpg",
+      "pages": 552,
+      "mood": [
+        "heartbreaking",
+        "inspiring"
+      ],
+      "rating": 4.6,
+      "price": 14.99,
+      "stock": 20
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "bookId": "2",
+      "text": "A dragon without its rider is a tragedy. A rider without their dragon is dead.",
+      "author": "Rebecca Yarros"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Jane Doe",
+      "email": "jane@example.com"
+    },
+    {
+      "name": "Google Demo User",
+      "email": "demo.google@example.com",
+      "password": "google_mock_password",
+      "id": 2
+    },
+    {
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "testpassword123",
+      "id": 3
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "bookId": "1",
+      "userId": 1,
+      "text": "Absolutely breathtaking. I cried three times.",
+      "mood": "heartbreaking"
+    }
+  ]
+}

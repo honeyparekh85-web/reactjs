@@ -1,0 +1,49 @@
+{
+  "name": "bookhaven",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "serve:api": "json-server --watch db.json --port 3001",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "deploy": "firebase deploy",
+    "firebase:deploy-rules": "firebase deploy --only firestore:rules,storage --project bookhaven-fd300",
+    "firebase:cors": "node scripts/ensure-storage-bucket.mjs",
+    "firebase:setup": "node scripts/setup-firebase-storage.mjs",
+    "emulators": "firebase emulators:start --only storage,firestore,auth"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
+    "axios": "^1.16.1",
+    "clsx": "^2.1.1",
+    "firebase": "^12.13.0",
+    "framer-motion": "^12.39.0",
+    "lucide-react": "^1.16.0",
+    "pdf-parse": "^1.1.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-redux": "^9.3.0",
+    "react-router-dom": "^7.15.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "@google-cloud/storage": "^7.16.0",
+    "json-server": "^0.17.4",
+    "postcss": "^8.5.14",
+    "tailwindcss": "^3.4.0",
+    "vite": "^8.0.12"
+  }
+}
